@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:trx="http://schemas.android.com/apk/res/com.trx.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心"
+        />
+    
+    <com.trx.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_auto_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        trx:desc_off="自动更新已关闭"
+        trx:desc_on="自动更新已开启"
+        trx:mtitle="自动更新设置"
+        >
+    </com.trx.mobilesafe.view.SettingItemView>
+
+    <com.trx.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        trx:desc_off="归属地显示已经关闭"
+        trx:desc_on="归属地显示已经开启"
+        trx:mtitle="电话归属地显示设置" />
+
+    <com.trx.mobilesafe.view.SettingItemClickView
+        android:id="@+id/sic_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.trx.mobilesafe.view.SettingItemClickView
+        android:id="@+id/sic_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.trx.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_black_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        trx:desc_off="黑名单拦截已经关闭"
+        trx:desc_on="黑名单拦截已经开启"
+        trx:mtitle="黑名单拦截设置" />
+
+    <com.trx.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        trx:desc_off="程序锁已经关闭"
+        trx:desc_on="程序锁已经开启"
+        trx:mtitle="程序锁设置" />
+
+</LinearLayout>
